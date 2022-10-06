@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <title>Table&From</title>
 </head>
+<style>
+    select {
+        width: 300px;
+    }
+    option {
+        color: cornflowerblue;
+    }
+    p {
+        font-size: 20px;
+
+    }
+</style>
 <body>
-<from>
+<h1>Order Form</h1>
+<form action="">
    <p>what would you like to buy?</p>
-    <input name="a" type="text">
-</from>
-<from>
-    <p>How many would yuo like to order?</p>
+    <select name="Hàng hóa" id="">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+
+    <p>How many would you like to order?</p>
     <tablel><input name="hobby" type="radio">1 - $10</tablel><br>
     <tablel><input name="hobby" type="radio">2 - $20</tablel><br>
     <tablel><input name="hobby" type="radio">3 - $30</tablel><br>
-</from>
-<from>
+
     <p>Name * </p>
-    <tablel><input name="FirstName" type="text"></tablel>
-    <tablel><input name="LasName" type="text"></tablel>
-</from>
+    <tablel><input name="FirstName" placeholder="FirstName" type="text"></tablel>
+    <tablel><input name="LasName" placeholder="LastName" type="text"></tablel>
+
+    <p>Email</p>
+    <input style="width: 350px" type="text">
+
+    <p>Phone Number</p>
+    <input style="width: 100px" type="text"> - <input style="width: 100px" type="text"> - <input style="width: 100px" type="text">
+    <br>
+    <br>
+    <input type="submit" value="submit">
+</form>
 </body>
 </html>
